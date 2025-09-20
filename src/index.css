@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* KMRL Document Management System - Official Branding */
+
+@layer base {
+  :root {
+    /* KMRL Light Mode - Official Brand Colors */
+    --background: 0 0% 96%;  /* Light Grey #F5F5F5 */
+    --foreground: 0 0% 20%;  /* Dark Grey #333333 */
+
+    --card: 0 0% 100%;  /* White card background */
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    /* KMRL Turquoise Primary */
+    --primary: 188 100% 42%;  /* Turquoise #00B8D4 */
+    --primary-foreground: 0 0% 100%;  /* White text on primary */
+    --primary-hover: 188 100% 38%;
+
+    /* Secondary with turquoise accent */
+    --secondary: 0 0% 69%;  /* Medium Grey #B0B0B0 */
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* KMRL Lime Green Accent */
+    --accent: 77 100% 42%;  /* Lime Green #A1D700 */
+    --accent-foreground: 0 0% 20%;
+
+    /* Success Green for Compliance */
+    --success: 77 100% 42%;  /* Using KMRL lime green */
+    --success-foreground: 0 0% 20%;
+    
+    /* Warning & Destructive */
+    --warning: 45 93% 58%;
+    --warning-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 69%;  /* Medium grey borders */
+    --input: 0 0% 69%;
+    --ring: 188 100% 42%;  /* Turquoise focus ring */
+
+    /* KMRL Brand Colors */
+    --kmrl-turquoise: 188 100% 42%;  /* #00B8D4 */
+    --kmrl-lime: 77 100% 42%;        /* #A1D700 */
+    --kmrl-grey: 0 0% 69%;           /* #B0B0B0 */
+    
+    /* KMRL Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(188 100% 42%) 0%, hsl(188 100% 38%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(77 100% 42%) 0%, hsl(77 100% 38%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    
+    /* Professional Shadows */
+    --shadow-soft: 0 1px 3px hsl(222 47% 11% / 0.1);
+    --shadow-medium: 0 4px 12px hsl(222 47% 11% / 0.1);
+    --shadow-strong: 0 8px 25px hsl(222 47% 11% / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* KMRL Dark Mode - Optimized Palette */
+    --background: 0 0% 7%;   /* Charcoal Black #121212 */
+    --foreground: 0 0% 88%;  /* Light Grey #E0E0E0 */
+
+    --card: 0 0% 12%;        /* Dark Grey #1E1E1E */
+    --card-foreground: 0 0% 88%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 88%;
+
+    /* KMRL Deep Teal Primary for Dark Mode */
+    --primary: 184 100% 23%; /* Deep Teal #006D77 */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 184 100% 27%;
+
+    --secondary: 195 17% 17%; /* Muted Teal Grey #2A3F44 */
+    --secondary-foreground: 0 0% 88%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 53%; /* Medium Grey #888888 */
+
+    /* KMRL Bright Lime Green Accent for Dark Mode */
+    --accent: 77 100% 42%;   /* Bright Lime Green #A1D700 */
+    --accent-foreground: 0 0% 7%;
+
+    --success: 77 100% 42%;  /* Using KMRL lime green */
+    --success-foreground: 0 0% 7%;
+    
+    --warning: 45 93% 68%;
+    --warning-foreground: 0 0% 0%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 88%;
+
+    --border: 195 17% 17%;   /* Muted Teal Grey borders */
+    --input: 195 17% 17%;
+    --ring: 184 100% 23%;    /* Deep Teal focus ring */
+
+    /* KMRL Dark Mode Brand Colors */
+    --kmrl-turquoise: 184 100% 23%; /* Deep Teal */
+    --kmrl-lime: 77 100% 42%;       /* Bright Lime Green */
+    --kmrl-grey: 0 0% 53%;          /* Medium Grey */
+    
+    /* KMRL Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(184 100% 23%) 0%, hsl(184 100% 27%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(77 100% 42%) 0%, hsl(77 100% 38%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 12%) 0%, hsl(195 17% 15%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(77 100% 42%) 0%, hsl(77 100% 38%) 100%);
+    
+    /* Sidebar dark mode updates */
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 88%;
+    --sidebar-primary: 184 100% 23%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 195 17% 17%;
+    --sidebar-accent-foreground: 0 0% 88%;
+    --sidebar-border: 195 17% 17%;
+    --sidebar-ring: 184 100% 23%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border transition-colors duration-300 ease-in-out;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300 ease-in-out;
+  }
+  
+  /* Enhanced transitions for components */
+  .sidebar, 
+  .card, 
+  .button, 
+  .input, 
+  .badge,
+  .tab,
+  .dropdown-menu {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+}
